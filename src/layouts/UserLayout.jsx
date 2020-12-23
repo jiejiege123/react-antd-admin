@@ -14,8 +14,8 @@ const UserLayout = props => {
   } = props;
   const { routes = [] } = route;
   const {
-    children,
-    location = {
+    children, // 子路由的位置  类似于vue router-view
+    location = { // location  当前页 url 相关
       pathname: '',
     },
   } = props;
