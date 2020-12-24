@@ -9,6 +9,7 @@ import LoginTab from './LoginTab';
 import styles from './index.less';
 
 const Login = props => {
+  console.log(props);
   const { className } = props;
   const [tabs, setTabs] = useState([]);
   const [active, setActive] = useState();
@@ -22,7 +23,7 @@ const Login = props => {
     if (!child) {
       return;
     }
-
+    // type 就是标签名称
     if (child.type.typeName === 'LoginTab') {
       TabChildren.push(child);
     } else {
